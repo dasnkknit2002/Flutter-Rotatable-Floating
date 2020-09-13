@@ -47,16 +47,16 @@ class FloatingExample extends StatelessWidget {
 To create floating rotating tapable widget
 ```dart
 
-class FloatingExample extends StatelessWidget {
+class FloatingAndRotatingExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: Text('Floating')),
+        appBar: AppBar(title: Text('Floating and rotatable')),
         body: Center(
-            child: BouncingAvatar(Container(
+            child: BouncingAvatar(Rotatable(Container(
                 width: 150,
                 height: 150,
-                color: Colors.lightBlueAccent))));
+                color: Colors.lightBlueAccent)))));
   }
 }
 
