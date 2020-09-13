@@ -1,0 +1,19 @@
+name: rotatable
+description: A plugin that provides one finger rotation, floating widget with click bounce effect.
+version: 0.0.1
+homepage: https://github.com/dasnkknit2002/Flutter-Rotatable-Floating
+
+environment:
+  sdk: ">=2.3.0 <3.0.0"
+  flutter: ">=1.17.0 <2.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
