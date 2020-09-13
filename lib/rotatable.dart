@@ -5,6 +5,19 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
+///
+/// {@tool snippet}
+///
+/// This example shows how to create a [Rotatable].
+///
+/// ```dart
+/// Rotatable(
+///   Container(width: 300.0, height: 300.0, color: Colors.yellow),
+/// )
+/// ```
+/// {@end-tool}
+///
+///
 class Rotatable extends StatefulWidget {
   Rotatable(this.child, {Key key, this.initialAngle = 0.0}) : super(key: key);
   final Widget child;

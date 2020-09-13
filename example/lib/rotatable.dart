@@ -9,7 +9,7 @@ class RotatableExample extends StatelessWidget {
         body: Center(
             child: Rotatable(Container(
                 child: Icon(
-                  Icons.,
+                  Icons.touch_app,
                   color: Colors.blueGrey,
                 ),
                 width: 150,

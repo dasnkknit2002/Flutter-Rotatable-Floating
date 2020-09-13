@@ -2,8 +2,20 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 import 'allow_all_gesture_recognizer.dart';
-import 'rotatable.dart';
 
+///
+/// {@tool snippet}
+///
+/// This example shows how to create a [BouncingAvatar].
+///
+/// ```dart
+/// BouncingAvatar(
+///   Container(width: 300.0, height: 300.0, color: Colors.yellow),
+/// )
+/// ```
+/// {@end-tool}
+///
+///
 class BouncingAvatar extends StatefulWidget {
   final Widget child;
   BouncingAvatar(this.child);

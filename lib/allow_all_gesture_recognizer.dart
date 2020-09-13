@@ -1,6 +1,32 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
+///
+/// Gesture Recogniser which can be used to allow Tap and Pan gesture without interfering with other recogniser like scroll etc. in UI arena.
+/// {@tool snippet}
+///
+/// This example shows how to hook up a [AllowAllGestureRecognizer].
+///
+/// ```dart
+/// RawGestureDetector(
+///   gestures: <Type, GestureRecognizerFactory>{
+///     AllowAllGestureRecognizer: GestureRecognizerFactoryWithHandlers<TapGestureRecognizer>(
+///       () => AllowAllGestureRecognizer(),
+///       (AllowAllGestureRecognizer instance) {
+///         instance
+///           ..onPanDown = (details) { print('tapped'); }
+///           ..onTap = () { print('tapped'); }
+///           ..onPanStart = (details) { print('pan started');  }
+///           ..onPanUpdate = (details) { print('item moved'); };
+///           ..onPanEnd = (details) { print('pan completed'); };
+///       },
+///     ),
+///   },
+///   child: Container(width: 300.0, height: 300.0, color: Colors.yellow, child: Text(_last)),
+/// )
+/// ```
+/// {@end-tool}
+///
 class AllowAllGestureRecognizer extends OneSequenceGestureRecognizer {
   final GestureTapCallback onTap;
   final GestureDragUpdateCallback onPanUpdate;

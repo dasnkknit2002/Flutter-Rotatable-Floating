@@ -12,14 +12,53 @@ To use this plugin, add ```rotatable``` as a [dependency in your pubspec.yaml](h
 To use one finger rotation feature
 ```dart
 
-Rotatable(widget);
+class RotatableExample extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(title: Text('Rotatable')),
+        body: Center(
+            child: Rotatable(Container(
+                width: 150,
+                height: 150,
+                color: Colors.lightBlueAccent))));
+  }
+}
 
 ```
 
-To creating floating widget with finger movement
+To create floating widget with finger movement
 ```dart
 
-BouncingAvatar(widget);
+class FloatingExample extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(title: Text('Floating')),
+        body: Center(
+            child: BouncingAvatar(Container(
+                width: 150,
+                height: 150,
+                color: Colors.lightBlueAccent))));
+  }
+}
+
+```
+To create floating rotating tapable widget
+```dart
+
+class FloatingExample extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(title: Text('Floating')),
+        body: Center(
+            child: BouncingAvatar(Container(
+                width: 150,
+                height: 150,
+                color: Colors.lightBlueAccent))));
+  }
+}
 
 ```
 
