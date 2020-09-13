@@ -81,7 +81,7 @@ class BouncingAvatarState extends State<BouncingAvatar>
 
   @override
   Widget build(BuildContext context) {
-    Widget rotatedChild = Rotatable(widget.child);
+    Widget rotatedChild = widget.child;
     Widget animatedChild = ScaleTransition(
         child: showChild ? rotatedChild : Container(), scale: scaleAnimation);
     return RawGestureDetector(child: animatedChild, gestures: <Type,
